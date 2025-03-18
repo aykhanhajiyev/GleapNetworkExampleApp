@@ -21,7 +21,6 @@
 		488E0D782D886C5F00EA639C /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D772D886C5F00EA639C /* Cancellable.swift */; };
 		488E0D7A2D886C6A00EA639C /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D792D886C6A00EA639C /* HTTPHeaders.swift */; };
 		488E0D7C2D886C7600EA639C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D7B2D886C7600EA639C /* SessionManager.swift */; };
-		488E0D7E2D8949E000EA639C /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D7D2D8949E000EA639C /* NetworkLogger.swift */; };
 		488E0D802D8949F300EA639C /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D7F2D8949F300EA639C /* EndPointType.swift */; };
 		488E0D822D894A2600EA639C /* NetworkDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D812D894A2600EA639C /* NetworkDataModel.swift */; };
 		488E0D842D894A3100EA639C /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D832D894A3100EA639C /* SessionDelegate.swift */; };
@@ -35,6 +34,7 @@
 		488E0D9A2D894CDC00EA639C /* Buildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D992D894CDC00EA639C /* Buildable.swift */; };
 		488E0D9D2D894DB900EA639C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 488E0D9C2D894DB900EA639C /* SnapKit */; };
 		488E0DA02D894E0300EA639C /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 488E0D9F2D894E0300EA639C /* SwiftMessages */; };
+		488E0DA92D896B5000EA639C /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0DA82D896B5000EA639C /* NetworkLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +53,6 @@
 		488E0D772D886C5F00EA639C /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
 		488E0D792D886C6A00EA639C /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
 		488E0D7B2D886C7600EA639C /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
-		488E0D7D2D8949E000EA639C /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkLogger.swift; path = ../../../../Downloads/NetworkLogger.swift; sourceTree = "<group>"; };
 		488E0D7F2D8949F300EA639C /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
 		488E0D812D894A2600EA639C /* NetworkDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataModel.swift; sourceTree = "<group>"; };
 		488E0D832D894A3100EA639C /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +64,7 @@
 		488E0D922D894B5700EA639C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		488E0D942D894BC800EA639C /* LoginEndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEndPointType.swift; sourceTree = "<group>"; };
 		488E0D992D894CDC00EA639C /* Buildable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buildable.swift; sourceTree = "<group>"; };
+		488E0DA82D896B5000EA639C /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,10 +134,10 @@
 				488E0D772D886C5F00EA639C /* Cancellable.swift */,
 				488E0D792D886C6A00EA639C /* HTTPHeaders.swift */,
 				488E0D7B2D886C7600EA639C /* SessionManager.swift */,
-				488E0D7D2D8949E000EA639C /* NetworkLogger.swift */,
 				488E0D7F2D8949F300EA639C /* EndPointType.swift */,
 				488E0D812D894A2600EA639C /* NetworkDataModel.swift */,
 				488E0D832D894A3100EA639C /* SessionDelegate.swift */,
+				488E0DA82D896B5000EA639C /* NetworkLogger.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -259,7 +259,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				488E0D952D894BC800EA639C /* LoginEndPointType.swift in Sources */,
-				488E0D7E2D8949E000EA639C /* NetworkLogger.swift in Sources */,
 				488E0D782D886C5F00EA639C /* Cancellable.swift in Sources */,
 				488E0D802D8949F300EA639C /* EndPointType.swift in Sources */,
 				488E0D742D886C4300EA639C /* RequestBuilder.swift in Sources */,
@@ -279,6 +278,7 @@
 				488E0D6E2D886C0B00EA639C /* ResponseHandler.swift in Sources */,
 				488E0D8B2D894A9E00EA639C /* JSONParameterEncoder.swift in Sources */,
 				488E0D552D886B3900EA639C /* SceneDelegate.swift in Sources */,
+				488E0DA92D896B5000EA639C /* NetworkLogger.swift in Sources */,
 				488E0D6B2D886BAA00EA639C /* SampleVC.swift in Sources */,
 				488E0D7C2D886C7600EA639C /* SessionManager.swift in Sources */,
 			);
