@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		488E0D532D886B3900EA639C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D522D886B3900EA639C /* AppDelegate.swift */; };
+		488E0D552D886B3900EA639C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D542D886B3900EA639C /* SceneDelegate.swift */; };
+		488E0D5C2D886B3B00EA639C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 488E0D5B2D886B3B00EA639C /* Assets.xcassets */; };
+		488E0D5F2D886B3B00EA639C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 488E0D5E2D886B3B00EA639C /* Base */; };
+		488E0D682D886B4C00EA639C /* Gleap in Frameworks */ = {isa = PBXBuildFile; productRef = 488E0D672D886B4C00EA639C /* Gleap */; };
+		488E0D6B2D886BAA00EA639C /* SampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D6A2D886BAA00EA639C /* SampleVC.swift */; };
+		488E0D6E2D886C0B00EA639C /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D6D2D886C0B00EA639C /* ResponseHandler.swift */; };
+		488E0D702D886C2100EA639C /* NetwokrRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D6F2D886C2100EA639C /* NetwokrRouter.swift */; };
+		488E0D722D886C3400EA639C /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D712D886C3400EA639C /* HTTPTask.swift */; };
+		488E0D742D886C4300EA639C /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D732D886C4300EA639C /* RequestBuilder.swift */; };
+		488E0D762D886C5200EA639C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D752D886C5200EA639C /* HTTPMethod.swift */; };
+		488E0D782D886C5F00EA639C /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D772D886C5F00EA639C /* Cancellable.swift */; };
+		488E0D7A2D886C6A00EA639C /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D792D886C6A00EA639C /* HTTPHeaders.swift */; };
+		488E0D7C2D886C7600EA639C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D7B2D886C7600EA639C /* SessionManager.swift */; };
+		488E0D7E2D8949E000EA639C /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D7D2D8949E000EA639C /* NetworkLogger.swift */; };
+		488E0D802D8949F300EA639C /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D7F2D8949F300EA639C /* EndPointType.swift */; };
+		488E0D822D894A2600EA639C /* NetworkDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D812D894A2600EA639C /* NetworkDataModel.swift */; };
+		488E0D842D894A3100EA639C /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D832D894A3100EA639C /* SessionDelegate.swift */; };
+		488E0D872D894A7B00EA639C /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D862D894A7B00EA639C /* ParameterEncoding.swift */; };
+		488E0D892D894A8E00EA639C /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D882D894A8E00EA639C /* URLParameterEncoder.swift */; };
+		488E0D8B2D894A9E00EA639C /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D8A2D894A9E00EA639C /* JSONParameterEncoder.swift */; };
+		488E0D8E2D894AC300EA639C /* LoginNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D8D2D894AC300EA639C /* LoginNetworkService.swift */; };
+		488E0D902D894AFC00EA639C /* LoginUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D8F2D894AFC00EA639C /* LoginUserModel.swift */; };
+		488E0D932D894B5700EA639C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D922D894B5700EA639C /* NetworkService.swift */; };
+		488E0D952D894BC800EA639C /* LoginEndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D942D894BC800EA639C /* LoginEndPointType.swift */; };
+		488E0D9A2D894CDC00EA639C /* Buildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E0D992D894CDC00EA639C /* Buildable.swift */; };
+		488E0D9D2D894DB900EA639C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 488E0D9C2D894DB900EA639C /* SnapKit */; };
+		488E0DA02D894E0300EA639C /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 488E0D9F2D894E0300EA639C /* SwiftMessages */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		488E0D4F2D886B3900EA639C /* GleapNetworkExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GleapNetworkExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		488E0D522D886B3900EA639C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		488E0D542D886B3900EA639C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		488E0D5B2D886B3B00EA639C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		488E0D5E2D886B3B00EA639C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		488E0D602D886B3B00EA639C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		488E0D6A2D886BAA00EA639C /* SampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleVC.swift; sourceTree = "<group>"; };
+		488E0D6D2D886C0B00EA639C /* ResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHandler.swift; sourceTree = "<group>"; };
+		488E0D6F2D886C2100EA639C /* NetwokrRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwokrRouter.swift; sourceTree = "<group>"; };
+		488E0D712D886C3400EA639C /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		488E0D732D886C4300EA639C /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		488E0D752D886C5200EA639C /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		488E0D772D886C5F00EA639C /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		488E0D792D886C6A00EA639C /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
+		488E0D7B2D886C7600EA639C /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		488E0D7D2D8949E000EA639C /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkLogger.swift; path = ../../../../Downloads/NetworkLogger.swift; sourceTree = "<group>"; };
+		488E0D7F2D8949F300EA639C /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		488E0D812D894A2600EA639C /* NetworkDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataModel.swift; sourceTree = "<group>"; };
+		488E0D832D894A3100EA639C /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
+		488E0D862D894A7B00EA639C /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		488E0D882D894A8E00EA639C /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		488E0D8A2D894A9E00EA639C /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		488E0D8D2D894AC300EA639C /* LoginNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNetworkService.swift; sourceTree = "<group>"; };
+		488E0D8F2D894AFC00EA639C /* LoginUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserModel.swift; sourceTree = "<group>"; };
+		488E0D922D894B5700EA639C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		488E0D942D894BC800EA639C /* LoginEndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEndPointType.swift; sourceTree = "<group>"; };
+		488E0D992D894CDC00EA639C /* Buildable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buildable.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		488E0D4C2D886B3900EA639C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488E0D682D886B4C00EA639C /* Gleap in Frameworks */,
+				488E0DA02D894E0300EA639C /* SwiftMessages in Frameworks */,
+				488E0D9D2D894DB900EA639C /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		488E0D462D886B3900EA639C = {
+			isa = PBXGroup;
+			children = (
+				488E0D512D886B3900EA639C /* GleapNetworkExample */,
+				488E0D502D886B3900EA639C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		488E0D502D886B3900EA639C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				488E0D4F2D886B3900EA639C /* GleapNetworkExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		488E0D512D886B3900EA639C /* GleapNetworkExample */ = {
+			isa = PBXGroup;
+			children = (
+				488E0D962D894CC700EA639C /* Buildable */,
+				488E0D8C2D894AB700EA639C /* NetworkService */,
+				488E0D6C2D886BF200EA639C /* Network */,
+				488E0D692D886BA500EA639C /* Sample */,
+				488E0D522D886B3900EA639C /* AppDelegate.swift */,
+				488E0D542D886B3900EA639C /* SceneDelegate.swift */,
+				488E0D5B2D886B3B00EA639C /* Assets.xcassets */,
+				488E0D5D2D886B3B00EA639C /* LaunchScreen.storyboard */,
+				488E0D602D886B3B00EA639C /* Info.plist */,
+			);
+			path = GleapNetworkExample;
+			sourceTree = "<group>";
+		};
+		488E0D692D886BA500EA639C /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				488E0D6A2D886BAA00EA639C /* SampleVC.swift */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		488E0D6C2D886BF200EA639C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				488E0D912D894B4C00EA639C /* NetworkService */,
+				488E0D852D894A6E00EA639C /* Encoding */,
+				488E0D6D2D886C0B00EA639C /* ResponseHandler.swift */,
+				488E0D6F2D886C2100EA639C /* NetwokrRouter.swift */,
+				488E0D712D886C3400EA639C /* HTTPTask.swift */,
+				488E0D732D886C4300EA639C /* RequestBuilder.swift */,
+				488E0D752D886C5200EA639C /* HTTPMethod.swift */,
+				488E0D772D886C5F00EA639C /* Cancellable.swift */,
+				488E0D792D886C6A00EA639C /* HTTPHeaders.swift */,
+				488E0D7B2D886C7600EA639C /* SessionManager.swift */,
+				488E0D7D2D8949E000EA639C /* NetworkLogger.swift */,
+				488E0D7F2D8949F300EA639C /* EndPointType.swift */,
+				488E0D812D894A2600EA639C /* NetworkDataModel.swift */,
+				488E0D832D894A3100EA639C /* SessionDelegate.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		488E0D852D894A6E00EA639C /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				488E0D862D894A7B00EA639C /* ParameterEncoding.swift */,
+				488E0D882D894A8E00EA639C /* URLParameterEncoder.swift */,
+				488E0D8A2D894A9E00EA639C /* JSONParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		488E0D8C2D894AB700EA639C /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				488E0D8D2D894AC300EA639C /* LoginNetworkService.swift */,
+				488E0D8F2D894AFC00EA639C /* LoginUserModel.swift */,
+				488E0D942D894BC800EA639C /* LoginEndPointType.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		488E0D912D894B4C00EA639C /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				488E0D922D894B5700EA639C /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		488E0D962D894CC700EA639C /* Buildable */ = {
+			isa = PBXGroup;
+			children = (
+				488E0D992D894CDC00EA639C /* Buildable.swift */,
+			);
+			path = Buildable;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		488E0D4E2D886B3900EA639C /* GleapNetworkExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 488E0D632D886B3B00EA639C /* Build configuration list for PBXNativeTarget "GleapNetworkExample" */;
+			buildPhases = (
+				488E0D4B2D886B3900EA639C /* Sources */,
+				488E0D4C2D886B3900EA639C /* Frameworks */,
+				488E0D4D2D886B3900EA639C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GleapNetworkExample;
+			packageProductDependencies = (
+				488E0D672D886B4C00EA639C /* Gleap */,
+				488E0D9C2D894DB900EA639C /* SnapKit */,
+				488E0D9F2D894E0300EA639C /* SwiftMessages */,
+			);
+			productName = GleapNetworkExample;
+			productReference = 488E0D4F2D886B3900EA639C /* GleapNetworkExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		488E0D472D886B3900EA639C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					488E0D4E2D886B3900EA639C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 488E0D4A2D886B3900EA639C /* Build configuration list for PBXProject "GleapNetworkExample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 488E0D462D886B3900EA639C;
+			packageReferences = (
+				488E0D662D886B4C00EA639C /* XCRemoteSwiftPackageReference "Gleap-iOS-SDK" */,
+				488E0D9B2D894DB900EA639C /* XCRemoteSwiftPackageReference "SnapKit" */,
+				488E0D9E2D894E0300EA639C /* XCRemoteSwiftPackageReference "SwiftMessages" */,
+			);
+			productRefGroup = 488E0D502D886B3900EA639C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				488E0D4E2D886B3900EA639C /* GleapNetworkExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		488E0D4D2D886B3900EA639C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488E0D5C2D886B3B00EA639C /* Assets.xcassets in Resources */,
+				488E0D5F2D886B3B00EA639C /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		488E0D4B2D886B3900EA639C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488E0D952D894BC800EA639C /* LoginEndPointType.swift in Sources */,
+				488E0D7E2D8949E000EA639C /* NetworkLogger.swift in Sources */,
+				488E0D782D886C5F00EA639C /* Cancellable.swift in Sources */,
+				488E0D802D8949F300EA639C /* EndPointType.swift in Sources */,
+				488E0D742D886C4300EA639C /* RequestBuilder.swift in Sources */,
+				488E0D822D894A2600EA639C /* NetworkDataModel.swift in Sources */,
+				488E0D9A2D894CDC00EA639C /* Buildable.swift in Sources */,
+				488E0D7A2D886C6A00EA639C /* HTTPHeaders.swift in Sources */,
+				488E0D842D894A3100EA639C /* SessionDelegate.swift in Sources */,
+				488E0D722D886C3400EA639C /* HTTPTask.swift in Sources */,
+				488E0D702D886C2100EA639C /* NetwokrRouter.swift in Sources */,
+				488E0D532D886B3900EA639C /* AppDelegate.swift in Sources */,
+				488E0D8E2D894AC300EA639C /* LoginNetworkService.swift in Sources */,
+				488E0D872D894A7B00EA639C /* ParameterEncoding.swift in Sources */,
+				488E0D902D894AFC00EA639C /* LoginUserModel.swift in Sources */,
+				488E0D932D894B5700EA639C /* NetworkService.swift in Sources */,
+				488E0D762D886C5200EA639C /* HTTPMethod.swift in Sources */,
+				488E0D892D894A8E00EA639C /* URLParameterEncoder.swift in Sources */,
+				488E0D6E2D886C0B00EA639C /* ResponseHandler.swift in Sources */,
+				488E0D8B2D894A9E00EA639C /* JSONParameterEncoder.swift in Sources */,
+				488E0D552D886B3900EA639C /* SceneDelegate.swift in Sources */,
+				488E0D6B2D886BAA00EA639C /* SampleVC.swift in Sources */,
+				488E0D7C2D886C7600EA639C /* SessionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		488E0D5D2D886B3B00EA639C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				488E0D5E2D886B3B00EA639C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		488E0D612D886B3B00EA639C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		488E0D622D886B3B00EA639C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		488E0D642D886B3B00EA639C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AXMV6W88WJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GleapNetworkExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aykhan.GleapNetworkExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		488E0D652D886B3B00EA639C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AXMV6W88WJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GleapNetworkExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aykhan.GleapNetworkExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		488E0D4A2D886B3900EA639C /* Build configuration list for PBXProject "GleapNetworkExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				488E0D612D886B3B00EA639C /* Debug */,
+				488E0D622D886B3B00EA639C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		488E0D632D886B3B00EA639C /* Build configuration list for PBXNativeTarget "GleapNetworkExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				488E0D642D886B3B00EA639C /* Debug */,
+				488E0D652D886B3B00EA639C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		488E0D662D886B4C00EA639C /* XCRemoteSwiftPackageReference "Gleap-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GleapSDK/Gleap-iOS-SDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.2.2;
+			};
+		};
+		488E0D9B2D894DB900EA639C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		488E0D9E2D894E0300EA639C /* XCRemoteSwiftPackageReference "SwiftMessages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftKickMobile/SwiftMessages";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		488E0D672D886B4C00EA639C /* Gleap */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 488E0D662D886B4C00EA639C /* XCRemoteSwiftPackageReference "Gleap-iOS-SDK" */;
+			productName = Gleap;
+		};
+		488E0D9C2D894DB900EA639C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 488E0D9B2D894DB900EA639C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		488E0D9F2D894E0300EA639C /* SwiftMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 488E0D9E2D894E0300EA639C /* XCRemoteSwiftPackageReference "SwiftMessages" */;
+			productName = SwiftMessages;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 488E0D472D886B3900EA639C /* Project object */;
+}

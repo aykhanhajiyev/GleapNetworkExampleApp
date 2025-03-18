@@ -1,0 +1,33 @@
+{
+  "originHash" : "b29fb3a63b9fb682ecba1ce4bfc45f3c6ddfa0d7623a19e190f798abca027319",
+  "pins" : [
+    {
+      "identity" : "gleap-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GleapSDK/Gleap-iOS-SDK",
+      "state" : {
+        "revision" : "b6b1a594ad34bb11c05a006c43ba1ced6c690585",
+        "version" : "14.2.2"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit.git",
+      "state" : {
+        "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
+        "version" : "5.7.1"
+      }
+    },
+    {
+      "identity" : "swiftmessages",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftKickMobile/SwiftMessages",
+      "state" : {
+        "revision" : "c544df6ce316422b9d65a571f932e800213dd09c",
+        "version" : "10.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}
